@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Popular from './components/category/Popular';
+import Comedy from './components/category/Comedy';
+import Action from './components/category/Action';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      hello
+      <div className='categoryes'>
+         <h4 className="category-name"> Popular </h4>
+          <Popular />
+         <h4 className="category-name"> Comedy </h4>
+          <Comedy />
+        <h4 className="category-name"> Action </h4>
+          <Action />
+      </div>
+
     </div>
   );
 }
